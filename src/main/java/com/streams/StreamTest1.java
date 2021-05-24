@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+import static java.util.Comparator.comparing;
 
 public class StreamTest1 {
 
@@ -47,12 +48,12 @@ public class StreamTest1 {
 		}
 		
 		// After JAVA8 with Streams
-		Comparator<Account> comparing = (a1,a2) -> a1.getName().compareTo(a2.getName());
+		// Comparator<Account> comparing = (a1,a2) -> a1.getName().compareTo(a2.getName());
 		
 		List<String> listOfNmaesWhosehavingBalanceLessThan3k1 =
 				listOfAccounts.stream()
 				.filter(a -> a.getBalance() <=3000.00)
-				.sorted(comparing)
+				.sorted(comparing(Account::getName))
 				.map(Account::getName).
 				collect(Collectors.toList());
 				
