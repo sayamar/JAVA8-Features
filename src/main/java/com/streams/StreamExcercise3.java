@@ -4,6 +4,8 @@ import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toSet;
 
+
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -104,6 +106,12 @@ public class StreamExcercise3 {
 		Optional<Transaction> smallValue =  transactions.stream().min(comparing(Transaction::getValue));
 		
 		System.out.println(smallValue.get().getValue());
+		
+		// Practice Test 9 - Sum of all tnx values
+		int sumOfAllTnxValues = transactions.stream()
+								.mapToInt(Transaction::getValue)
+								.sum();
+		System.out.println(sumOfAllTnxValues);
 	}
 
 }
