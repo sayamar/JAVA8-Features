@@ -1,0 +1,49 @@
+curl -X GET "http://localhost:8086/api/v1/flights?departureCity=SG&arrivalCity=US&departureDate=12-02-2022"
+
+curl -X 'GET' \
+  'http://localhost:8086/api/v1/flights?departureCity=SG&arrivalCity=IND&departureDate=12-02-2022' \
+  -H 'accept: */*' \
+  -H 'sourceSystem: SGT' \
+  -H 'authToken: 12QSADED'
+  
+  Sample Request : [
+  {
+    "id": 0,
+    "flightNo": "string",
+    "departureCity": "string",
+    "arrivalCity": "string",
+    "departureTime": "2022-01-13T08:07:34.798Z",
+    "arrivalTime": "2022-01-13T08:07:34.798Z"
+  }
+]
+
+
+curl -X 'POST' \
+  'http://localhost:8080/api/v1/bookFlight' \
+  -H 'accept: application/json' \
+  -H 'authCode: AW' \
+  -H 'sourceSystem: ASW' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "flightNo": "AQS",
+  "status": "New",
+  "firstName": "Maruthi",
+  "lastName": "Sayampu",
+  "email": "ma@gmail.com",
+  "phone": "12222",
+  "cardHolderName": "fsfdsf",
+  "cardNumber": "fsdfdsfdsf",
+  "expiryDate": "12-10-2011"
+}'
+
+
+insert into(1,'SGA210','Singapore','London','21-02-2022','22-02-2022');
+insert into(1,'SGA210','Singapore','London','22-02-2022','23-02-2022');
+insert into(1,'SGA210','Singapore','London','23-02-2022','24-02-2022');
+insert into(1,'SGA210','Singapore','London','24-02-2022','25-02-2022');
+insert into(1,'SGA210','Singapore','London','25-02-2022','26-02-2022');
+insert into(1,'SGA210','Singapore','London','26-02-2022','27-02-2022');
+
+PASSENGER
+
+RESERVATION

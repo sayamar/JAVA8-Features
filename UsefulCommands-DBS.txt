@@ -1,0 +1,229 @@
+ IBKR:
+
+ sayamar207
+ Gopaala@2015
+ Lakshmi
+ 
+ Useful java vulnerabilities https://www.stackhawk.com/blog/java-xss/
+ https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded
+
+mysql -u kcasdbuser -p  kcasdbadmin@2020
+
+1) Forget password
+2) Notification should required updations
+3) Mark as Read ( Link is not working )
+
+Connect to MYSQL - mysql -u kcasdbuser -p
+show databases ( TO SHOW databses )
+connect kcas_user ( to connect kcas_user database )
+use kcas_user ( to use kcas_user ) 
+show tables; ( to show tables )
+
+Hostname : 44.194.149.222
+
+username : ubuntu
+
+Maruthi@DESKTOP-M3AHD9N MINGW64 ~/Data/GitHub/kcas_phase1/kcas-project-services (kcas-phase1)
+$ git commit -m "Updated Whatapp mobile number & masking of NRIC/FIN info in database"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Maruthi@DESKTOP-M3AHD9N.(none)')
+
+github token : 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
+
+
+
+Phase 1:
+
+1) Phone number needs to be updated for sesha rao..with short link  - Done
+2) Email templates - Soumya/Maruthi - COntent provide by Sankar sir
+3) IC Number 4 digits - Maruthi / Sowmya / Achyuth    609P
+4) Memebership life - Upgrade BUTTON should be disappered - Hemant / Achyuth
+5) KCAS Donation Acknowledgement - KCAS upgrade acknowledgment - Soumay  / Maruthi
+
+Tomorrow at 8 PM deployment.
+
+
+Phase 2:
+Date should be updated with Life membership 
+Active /In-Active 
+Payment ackonloegement
+
+KCAS Donation Acknowledgement - KCAS upgrade acknowledgment
+ 
+
+Life
+
+KCAS Donation ackonloegement
+
+After Upgrade - Treasurer needs to be approved ....
+
+president
+secretary backup
+tresurer backup
+info/contact
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Maven :
+mvn clean install -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true
+
+mvn clean install -Dmaven.test.skip=true
+
+mvn clean install -Dcheckstype.skip=true -Dpmd.skip=true
+
+
+-----------------------------------------------------------------------------------------
+
+GIT Useful commands
+
+
+git clone --branch development https://kcas_maruthi_ui@gitlab.com/l4260/lux-asia-app.git   - working
+
+1) Clone the project using URL
+git clone <URL>
+
+2) clone the sepecific branch from the project <branchname> <cloneurl>
+
+3) git add <files>
+
+4) git commit -m "sepcific message which tells the enhancement / code to fix details"
+
+5) create a branch from master / integration
+
+   create branch <branchname >
+   
+   5.1 ) Display list of branches in local
+         git branch
+		 
+		 5.2 ) Display list of branches in remote
+		 
+		 git branch -r
+   
+6) Checkout the 
+
+    git checkout <branchname>
+	
+	move back to master / integration branch 
+	
+	git checkout
+	
+	
+7) git pull ( from branch )
+
+  Go to Intellij 
+  
+   click on commit 
+   
+    it shows Default chnagelist under that it shows Merge conflicts ( Resolve)
+	
+	CLick on Resolve 
+	
+	It will show the file with Yours and Their original
+	
+	 U need to click on Accept Yours / Accept Theirs
+	 
+	 
+	 After that - git pull
+	 
+	 
+	 git rebase --continue
+	 
+	 
+	 -- To fetch the latets changes from branch
+	 
+	 git fetch --allowall
+	 once get the chnages --
+	 
+	 git reset --hard origin/cn-9287
+	 
+	 
+	 -- How to fix up with existing commit id
+	 
+	 git rebase -i HEAD~3
+	 
+	 U can see three commits here. U want to fixup the last commit with existing commit id
+     copy that commit id ( new commit ) to the commit ( commit2) which is wanted to fix up
+
+     commit1
+     commit2
+     commit3
+     newcommit
+	 
+	 commit1
+     commit2
+	 f newcommit
+     commit3
+	 
+	 
+	 Rebase 
+	 
+	 1) To display list of last 7 commits in repo 
+	 git log -n 7 --oneline
+	 
+	 
+	 2) Force push to particular branch
+	   git push -f origin <branch>
+	   
+	   Rebase - Can do in 2 ways
+	   
+	   1) One way is through Bitbucket through UI
+	   2) from ur branch, go to master / integration branch
+	      git checkout integration
+		  git pull
+		   git checkout   
+	   
+	   
+	 
+	 
+    
+
+     	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+
+   
+
+  
+  
+  git checkout <branchname>
+ 
+
+
+
+GIT config related commands
+1) git config --list
+2) git config --global user.email "maruthi.sayampu@gmail.com"
+3) git config --global http.sslVerify false
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Check if customer is dormant or not
+Check if customer has Due diligence has expired
+Check If ID expired ( Preferred ID is expired )
+Check Returned Email from Finacle
+Check if customer has any RMB account without any transactions for 6 months from the dat of acocunt opening
+
+Available wallet checking
+1) The customer should be having at least 1 FCY account
+2) The customer should be having at least 1 CNY acocunt
+
+
+Existing PetStore Swagger 
+http://localhost:8282/swagger-ui/index.html
+
